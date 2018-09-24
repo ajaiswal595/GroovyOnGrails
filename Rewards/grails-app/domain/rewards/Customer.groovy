@@ -13,10 +13,12 @@ class Customer {
     static constraints = {
 
         //the order you provide here same will reflect in html
+
+        // the field having nullable : true are not mandatory field
         phone()
-        firstName()
-        lastName()
-        email()
+        firstName(nullable: true    )
+        lastName(nullable: true)
+        email(nullable: true)
         totalPoints()
     }
 }
