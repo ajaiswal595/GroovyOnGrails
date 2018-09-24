@@ -11,5 +11,12 @@ class Customer {
 
 
     static constraints = {
+
+        //the order you provide here same will reflect in html
+        phone()
+        firstName()
+        lastName()
+        email()
+        totalPoints()
     }
 }
