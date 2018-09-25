@@ -19,4 +19,14 @@ class WhiteboardController {
        /*  today = today+1    // we can perform add numbers so it will tell you the day by calculating leap year as well
         render("<br> Today is "+today.getDate())*/
     }
+
+    def strings() {
+        def first = "Ajay"
+        def last = "Jaiswal"
+        def points = 4
+        //render"welcome back " +first+" "+last+"you have "+points+"points"
+
+        render "welcome back $first $last you have $points points"  //using interpolation
+
+    }
 }
