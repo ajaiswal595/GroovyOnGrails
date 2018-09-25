@@ -22,49 +22,59 @@
             </div>
             <div class="row col-sm-12" >
                 <div class="col-sm-4">
-                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="1"/>
+                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="1" onclick="padkey(this.value)"/>
                 </div>
                 <div class="col-sm-4">
-                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="2"/>
+                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="2" onclick="padkey(this.value)"/>
                 </div>
                 <div class="col-sm-4">
-                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="3"/>
-                </div>
-            </div>
-            <div class="row col-sm-12" >
-                <div class="col-sm-4">
-                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="4"/>
-                </div>
-                <div class="col-sm-4">
-                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="5"/>
-                </div>
-                <div class="col-sm-4">
-                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="6"/>
+                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="3" onclick="padkey(this.value)"/>
                 </div>
             </div>
             <div class="row col-sm-12" >
                 <div class="col-sm-4">
-                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="7"/>
+                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="4" onclick="padkey(this.value)"/>
                 </div>
                 <div class="col-sm-4">
-                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="8"/>
+                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="5" onclick="padkey(this.value)"/>
                 </div>
                 <div class="col-sm-4">
-                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="9"/>
+                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="6" onclick="padkey(this.value)"/>
                 </div>
             </div>
             <div class="row col-sm-12" >
                 <div class="col-sm-4">
-                    <input class="btn btn-danger btn-lg btn-block" type="button" name="pad" value="Del"/>
+                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="7" onclick="padkey(this.value)"/>
                 </div>
                 <div class="col-sm-4">
-                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="0"/>
+                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="8" onclick="padkey(this.value)"/>
                 </div>
                 <div class="col-sm-4">
-                    <input class="btn btn-success btn-lg btn-block" type="button" name="pad" value="Go"/>
+                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="9" onclick="padkey(this.value)"/>
+                </div>
+            </div>
+            <div class="row col-sm-12" >
+                <div class="col-sm-4">
+                    <input class="btn btn-danger btn-lg btn-block" type="button" name="pad" value="Del" onclick="padkey(this.value)"/>
+                </div>
+                <div class="col-sm-4">
+                    <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="0" onclick="padkey(this.value)"/>
+                </div>
+                <div class="col-sm-4">
+                    <input class="btn btn-success btn-lg btn-block" type="button" name="pad" value="Go" onclick="padkey(this.value)"/>
                 </div>
             </div>
         </div>
     </div>
 
-</div>
+</div> <!- End Container->
+
+<script>
+
+    function padkey(num) {
+        var txt = document.getElementById("phone").value;
+        txt=txt + num;
+        document.getElementById("phone").value=txt;
+    }
+
+</script>
