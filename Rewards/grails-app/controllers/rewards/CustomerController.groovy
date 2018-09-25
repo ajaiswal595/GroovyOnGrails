@@ -7,4 +7,8 @@ class CustomerController {
 //    def index() {
 //        render "aaa"
 //    }
+
+    def checkin() {
+
+    }
 }

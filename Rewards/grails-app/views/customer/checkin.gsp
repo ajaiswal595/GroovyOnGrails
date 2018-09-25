@@ -3,7 +3,7 @@
 
 <head>
 	<title>Kiosk</title>
-	<link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.min.css')}" type="text/css">
+	<asset:stylesheet src="application.css"/>
 	<script src="js/respond.js"></script>
 </head>
 
@@ -14,6 +14,6 @@
 	
 	
 	<g:javascript library="jquery"/>
-	<script src="js/bootstrap.min.js"></script>
+	<asset:javascript src="application.js"/>
 </body>
 </html>
