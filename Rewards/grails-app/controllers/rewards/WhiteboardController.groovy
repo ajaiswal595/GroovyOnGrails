@@ -29,7 +29,13 @@ class WhiteboardController {
         render "welcome back $first $last you have $points points"  //using interpolation
 
         def fullName ="Ajay Kumar Jaiswal"
-        render "</br>Today is ${new Date()} and full name length is ${fullName.length()}"  // we can use expression using ${} in String 
+        render "</br>Today is ${new Date()} and full name length is ${fullName.length()}"  // we can use expression using ${} in String
 
+    }
+
+    def accessParam(){
+        def name = params.name
+        def age = params.age
+        render "Hello $name you are truning $age"
     }
 }
