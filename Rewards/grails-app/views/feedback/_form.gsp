@@ -48,3 +48,12 @@
     </g:radioGroup>
 
 </div>
+
+<div class="fieldcontain">
+
+    <label for="marketing">
+        How did you here about us?
+    </label>
+
+    <g:select from ="['Internet','Friend','Other']" name="marketing" value="${marketing}"/>
+</div>
