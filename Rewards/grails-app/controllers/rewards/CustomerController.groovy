@@ -28,6 +28,17 @@ class CustomerController {
         //http://localhost:1515/customer/lookup/8015551212
         //it will read the phone from url fetch the data accordingly.
 
+        //added some comparator
+
+        //findAllByLastNamelike("b%)     //case sensitive
+        //findAllByLastNameIlike("b%"    //case insensitive
+        //findAllByTotalPonintsGreaterThan(3)
+        //findAllByTotalPonintsGreaterThanEquals(3)
+        //findAllByTotalPonintsGreaterThanEquals(3,[sort:"totalPoints",order:"desc"])
+        //findAllByTotalPonintsBetween(2,4,[sort:"totalPoints",order:"desc"])
+
+        //findAllByFirstNameAndTotalPoints("Bo",3)
+
         def customerInstance  = Customer.findByPhone(params.id)
 
 
