@@ -2,6 +2,8 @@ package rewards
 
 class WhiteboardController {
 
+    def calculationsService
+
     //In controller every function is an action.
 
     def index() { }
@@ -37,5 +39,11 @@ class WhiteboardController {
         def name = params.name
         def age = params.age
         render "Hello $name you are truning $age"
+    }
+
+
+    def callingCalculationSevice(){
+        def welcomeMessage = calculationsService.welcome(params)
+        render welcomeMessage
     }
 }
